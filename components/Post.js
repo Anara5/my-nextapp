@@ -1,5 +1,5 @@
-function Post({ date, image, title }) {
-    let { file, description } = image;
+function Post({ title, picture, price }) {
+    let { file, description } = picture;
   
     return (
       <div className="post">
@@ -7,7 +7,7 @@ function Post({ date, image, title }) {
         <div className="description">{description}</div>
         <div className="text">
           <h2>{title}</h2>
-          <h3>{date.substring(0, 10)}</h3>
+          <h3>{price}</h3>
         </div>
       </div>
     )
