@@ -18,7 +18,7 @@ export default function Home({ posts }) {
                 price={p.price}
                 />
         })}
-      </div>
+        </div>
       </main>
     </div>
   )

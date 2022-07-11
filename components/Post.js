@@ -1,13 +1,13 @@
-function Post({ title, description, picture, price }) {
+function Post({ title, description, image, price }) {
   
     return (
       <div className="post">
-        <img alt={description} src={`https:${picture}`} />
-        <div className="description">{description}</div>
         <div className="text">
           <h2>{title}</h2>
           <h3>{price}</h3>
         </div>
+        <img alt={description} src={`https:${image}`} />
+        <div className="description">{description}</div>
       </div>
     )
   }
