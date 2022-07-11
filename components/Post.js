@@ -1,9 +1,8 @@
-function Post({ title, picture, price }) {
-    let { file, description } = picture;
+function Post({ title, description, picture, price }) {
   
     return (
       <div className="post">
-        <img alt={description} src={`https:${file.url}`} />
+        <img alt={description} src={`https:${picture}`} />
         <div className="description">{description}</div>
         <div className="text">
           <h2>{title}</h2>
