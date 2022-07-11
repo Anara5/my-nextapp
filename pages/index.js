@@ -6,14 +6,20 @@ import Post from '../components/Post';
 export default function Home({ posts }) {
   
   return (
-    <div className="posts">
-      {posts.map((p) => {
-        return <Post 
-                image={p.picture} 
+    <div className="home">
+      <title>Home</title>
+      <h1>Products</h1>
+      <main>
+        <div className="posts">
+        {posts.map((p) => {
+          return <Post 
+                image={p.picture.fields.file.url} 
                 title={p.title}
                 price={p.price}
                 />
-      })}
+        })}
+      </div>
+      </main>
     </div>
   )
 }
