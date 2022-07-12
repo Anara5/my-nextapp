@@ -13,7 +13,7 @@ export default function Home({ posts }) {
         <div className="posts">
         {posts.map((p) => {
           return <Post 
-                id={p.id}
+                key={p.Date}
                 image={p.picture.fields.file.url} 
                 title={p.title}
                 price={p.price}
